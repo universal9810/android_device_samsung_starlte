@@ -27,11 +27,11 @@ $(call inherit-product, device/samsung/starlte/device.mk)
 TARGET_SCREEN_HEIGHT := 2960
 TARGET_SCREEN_WIDTH := 1440
 
-## Inherit some common Lineage stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+## Inherit some common Pixel Experience stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := arrow_starlte
+PRODUCT_NAME := aosp_starlte
 PRODUCT_DEVICE := starlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G960F
@@ -39,15 +39,10 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-# ArrowOS Properties
-DEVICE_MAINTAINER := Baddar90
-
-BUILD_FINGERPRINT := "samsung/starltexx/starlte:10/QP1A.190711.020/G960FXXSHFUJ2:user/release-keys"
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=starltexx \
-    PRIVATE_BUILD_DESC="starltexx-user 10 QP1A.190711.020 G960FXXSHFUJ2 release-keys"
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.PDA=G960FXXSHFUJ2 \
-    ro.build.fingerprint=samsung/starltexx/starlte:10/QP1A.190711.020/G960FXXSHFUJ2:user/release-keys
+# Pixel Experience properties
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
