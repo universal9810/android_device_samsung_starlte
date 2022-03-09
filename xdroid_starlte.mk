@@ -27,11 +27,18 @@ $(call inherit-product, device/samsung/starlte/device.mk)
 TARGET_SCREEN_HEIGHT := 2960
 TARGET_SCREEN_WIDTH := 1440
 
-## Inherit some common Lineage stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+## Inherit some common xdroidsp stuff
+$(call inherit-product, vendor/xdroid/config/common.mk)
+IS_PHONE := true
+XDROID_BOOT := 1080
+XDROID_MAINTAINER := thenist
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_QUICK_TAP := false
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := arrow_starlte
+PRODUCT_NAME := xdroid_starlte
 PRODUCT_DEVICE := starlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G960F
