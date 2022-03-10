@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_starlte.mk
+    $(LOCAL_DIR)/octavi_starlte.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_starlte-eng \
-    arrow_starlte-user \
-    arrow_starlte-userdebug
+    octavi_starlte-eng \
+    octavi_starlte-user \
+    octavi_starlte-userdebug
