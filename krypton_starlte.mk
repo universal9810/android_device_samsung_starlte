@@ -24,23 +24,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 $(call inherit-product, device/samsung/starlte/device.mk)
 
 # Boot Animation
-TARGET_SCREEN_HEIGHT := 2960
-TARGET_SCREEN_WIDTH := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
 
-## Inherit some common Lineage stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+## Inherit some common Krypton stuff
+$(call inherit-product, vendor/krypton/config/common_full_phone.mk)
+TARGET_SUPPORTS_QUICK_TAP := true
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := arrow_starlte
+PRODUCT_NAME := krypton_starlte
 PRODUCT_DEVICE := starlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G960F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
-
-# ArrowOS Properties
-DEVICE_MAINTAINER := Baddar90
 
 BUILD_FINGERPRINT := "samsung/starltexx/starlte:10/QP1A.190711.020/G960FXXSHFUJ2:user/release-keys"
 
