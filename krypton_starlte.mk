@@ -29,6 +29,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 ## Inherit some common Krypton stuff
 $(call inherit-product, vendor/krypton/config/common_full_phone.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
+GAPPS_BUILD := true
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_NAME := krypton_starlte
