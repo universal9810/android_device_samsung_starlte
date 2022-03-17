@@ -29,6 +29,7 @@ TARGET_SCREEN_WIDTH := 1440
 
 ## Inherit some common DerpFest stuff
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
+DERP_BUILDTYPE := Official
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_NAME := derp_starlte
