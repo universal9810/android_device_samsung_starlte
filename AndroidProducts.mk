@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_starlte.mk
+    $(LOCAL_DIR)/palladium_starlte.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_starlte-eng \
-    arrow_starlte-user \
-    arrow_starlte-userdebug
+    palladium_starlte-eng \
+    palladium_starlte-user \
+    palladium_starlte-userdebug
