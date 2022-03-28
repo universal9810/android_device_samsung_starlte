@@ -30,6 +30,10 @@ TARGET_SCREEN_WIDTH := 1440
 # Inherit some common Awaken OS stuff.
 $(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 
+# GMS
+TARGET_GAPPS_ARCH := arm64
+USE_GAPPS := true
+
 ## Device identifier, this must come after all inclusions
 PRODUCT_NAME := awaken_starlte
 PRODUCT_DEVICE := starlte
