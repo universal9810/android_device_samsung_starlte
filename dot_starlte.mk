@@ -27,11 +27,11 @@ $(call inherit-product, device/samsung/starlte/device.mk)
 TARGET_SCREEN_HEIGHT := 2960
 TARGET_SCREEN_WIDTH := 1440
 
-## Inherit some common Pixel Experience stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+## Inherit some common DotOS stuff
+$(call inherit-product, vendor/dot/config/common.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := aosp_starlte
+PRODUCT_NAME := dot_starlte
 PRODUCT_DEVICE := starlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G960F
@@ -39,13 +39,6 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-# Project Elixir properties
-TARGET_GAPPS_ARCH := arm64
+## DotOS stuff
 TARGET_BOOT_ANIMATION_RES := 1440
-IS_PHONE := true
-TARGET_SUPPORTS_QUICK_TAP := true
-CUSTOM_BUILD_TYPE := OFFICIAL
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ACORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_GAPPS_ARCH := arm64
