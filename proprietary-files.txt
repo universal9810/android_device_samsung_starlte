@@ -84,9 +84,6 @@ vendor/firmware/iva20_rt-lhotse.bin
 -vendor/lib/sensors.sensorhub.so
 -vendor/lib64/sensors.sensorhub.so
 
-# Widewine
--vendor/lib/libwvhidl.so
-
 # Wi-Fi
 vendor/etc/wifi/bcmdhd_clm.blob
 vendor/etc/wifi/bcmdhd_mfg.bin_b2
