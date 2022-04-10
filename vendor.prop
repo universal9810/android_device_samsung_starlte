@@ -1,0 +1,2 @@
+### Low RAM device
+ro.config.avoid_gfx_accel=true
